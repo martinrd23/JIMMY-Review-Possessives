@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Jimmy Review · Possessive Adjectives & Pronouns</title>
+<style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Patrick+Hand&display=swap');
+:root{
+  --navy:#12375b;--sky:#dff3fb;--mint:#e7f5ef;--yellow:#ffd85a;--orange:#f4a259;
+  --teal:#2aa79b;--purple:#8566c5;--pink:#df6c91;--paper:#fffdf8;--ink:#17324d;
+  --muted:#617487;--line:#dce7ec;--good:#2f9e69;--bad:#d75d5d;--softbad:#fff0f0;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Nunito,Arial,sans-serif;background:#f5f2ea;color:var(--ink);line-height:1.55}
+.wrap{max-width:1100px;margin:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(255,253,248,.96);backdrop-filter:blur(10px);border-bottom:1px solid #e7e2d8}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 22px}.brand{font-weight:900}.brand span{font-family:'Patrick Hand';font-size:25px}
+.links{display:flex;gap:8px;flex-wrap:wrap}.links a{text-decoration:none;color:var(--navy);font-size:13px;font-weight:800;padding:7px 10px;border-radius:20px}.links a:hover{background:var(--sky)}
+.hero{padding:66px 24px 46px;background:linear-gradient(135deg,#fffdf8 57%,#dff3fb 57%)}.hero-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:36px;align-items:center}
+.eyebrow{font-weight:900;letter-spacing:1.4px;font-size:12px;text-transform:uppercase}.hero h1{font-family:'Patrick Hand';font-size:68px;line-height:.92;margin:10px 0;color:var(--navy)}
+.hero h1 em{font-style:normal;background:linear-gradient(transparent 72%,var(--yellow) 72%)}.hero p{font-size:19px;max-width:670px}.note{background:var(--yellow);padding:25px;transform:rotate(2deg);box-shadow:0 14px 28px #12375b1c;font-family:'Patrick Hand';font-size:28px;text-align:center;border-radius:5px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.chip{padding:9px 14px;background:#fff;border:2px solid var(--navy);border-radius:30px;font-weight:800;font-size:13px}
+section{padding:58px 24px}.section-title{font-family:'Patrick Hand';font-size:46px;margin:0 0 8px}.underline{width:130px;height:6px;background:var(--yellow);border-radius:10px;margin-bottom:24px}.lead{font-size:17px;max-width:850px}
+.info-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:25px}.info{background:#fff;border-radius:20px;padding:20px;box-shadow:0 6px 18px #17324d0c}.info:nth-child(odd){background:var(--sky)}.info:nth-child(even){background:var(--mint)}.info strong{font-family:'Patrick Hand';font-size:28px;display:block}
+.progress-shell{position:sticky;top:53px;z-index:18;background:rgba(255,253,248,.96);border-bottom:1px solid #ece5d9;box-shadow:0 5px 18px #17324d0a}.progress-inner{max-width:1100px;margin:auto;padding:9px 24px}.track{height:8px;background:#e7eef2;border-radius:999px;overflow:hidden}.fill{height:100%;width:0;background:linear-gradient(90deg,var(--navy),var(--teal),var(--yellow));transition:.25s}
+.assess-grid{display:grid;grid-template-columns:260px minmax(0,1fr);gap:20px;align-items:start}.side{position:sticky;top:95px;background:#eef7fa;border-radius:24px;padding:12px}.side button{width:100%;border:0;background:transparent;text-align:left;padding:12px;border-radius:15px;font-family:inherit;font-weight:800;color:var(--ink);cursor:pointer}.side button.active,.side button:hover{background:#fff;box-shadow:0 5px 14px #17324d10}.side small{display:block;color:var(--muted);font-weight:700}
+.panel{display:none}.panel.active{display:block}.qcard{background:#fff;border-radius:24px;padding:24px;margin-bottom:16px;box-shadow:0 8px 24px #17324d0d;border:1px solid #edf2f4}.qhead{display:flex;gap:12px;align-items:flex-start}.qnum{flex:0 0 40px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:900}.qcard h3{margin:2px 0 12px;font-size:18px}.options{display:grid;gap:9px;margin-top:12px}.option{border:2px solid #e5edf1;border-radius:14px;padding:11px 13px;background:#fff;cursor:pointer;font-weight:700;display:flex;gap:10px;align-items:center}.option:hover{border-color:#b9dbe8;background:#f8fcfe}.option.selected{border-color:var(--teal);background:#effaf7}.option.correct{border-color:var(--good);background:#eef9f3}.option.wrong{border-color:var(--bad);background:var(--softbad)}.option.locked{pointer-events:none;cursor:default;opacity:.72}.option.selected.locked{opacity:1}.pass-btn{margin-top:14px;margin-left:8px;border:2px solid #d9e3e8;background:#fff;color:var(--muted);padding:8px 15px;border-radius:24px;font-weight:900;cursor:pointer}.pass-btn:hover{background:#f7fafb;border-color:#b8c9d1}.pass-btn:disabled{opacity:.45;cursor:not-allowed}.feedback.pass{background:#f4f5f7;border-left:5px solid #8b98a3}
+.validate{margin-top:14px;border:0;background:var(--navy);color:#fff;padding:10px 17px;border-radius:24px;font-weight:900;cursor:pointer}.validate:disabled{opacity:.45;cursor:not-allowed}.feedback{display:none;margin-top:12px;padding:12px 14px;border-radius:14px;font-size:14px}.feedback.show{display:block}.feedback.good{background:#eef9f3;border-left:5px solid var(--good)}.feedback.bad{background:#fff0f0;border-left:5px solid var(--bad)}
+.reading{background:linear-gradient(135deg,#eef8fd,#fff);border-radius:24px;padding:24px;margin-bottom:18px;border:1px solid #e2edf2}.reading h3{font-family:'Patrick Hand';font-size:31px;margin:0 0 12px}.reading p{font-size:15px}.short-answer{width:100%;min-height:90px;border:2px solid #dce7ec;border-radius:14px;padding:12px;font:inherit;resize:vertical}.teacher-note{margin-top:9px;font-size:12px;color:var(--muted)}
+.summary-box{background:#fff;border-radius:28px;padding:28px;box-shadow:0 10px 30px #17324d10}.score-big{font-family:'Patrick Hand';font-size:64px;line-height:1;margin:6px 0}.bands{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}.band{padding:16px;border-radius:18px;background:var(--sky)}.band:nth-child(2){background:var(--mint)}.band:nth-child(3){background:#fff3bf}.band b{display:block;margin-bottom:5px}.feedback-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.feedback-card{padding:18px;border-radius:18px;background:#fff;border:1px solid var(--line)}.feedback-card h4{margin:0 0 8px}.tag{display:inline-block;padding:5px 9px;border-radius:15px;background:#eef5f8;font-size:11px;font-weight:900;margin:3px}
+.discussion-card{background:#fff;border-radius:22px;padding:22px;margin:14px 0;box-shadow:0 7px 20px #17324d0b}.discussion-card h3{margin:0 0 6px}.prompt{font-size:18px;font-weight:900;color:var(--navy);margin:8px 0}.follow{background:var(--sky);border-radius:14px;padding:12px 14px;margin-top:10px}.rubric{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:14px}.rubric select{width:100%;padding:9px;border-radius:12px;border:1px solid var(--line);font:inherit}.rubric label{font-size:11px;font-weight:900;color:var(--muted);display:block;margin-bottom:4px}.discussion-summary{margin-top:18px;padding:18px;border-radius:20px;background:var(--mint)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.btn{border:0;border-radius:24px;padding:11px 17px;font-weight:900;cursor:pointer;font-family:inherit}.btn.primary{background:var(--navy);color:#fff}.btn.secondary{background:var(--yellow);color:var(--navy)}.btn.ghost{background:#eef4f7;color:var(--navy)}
+.footer{background:var(--navy);color:#fff;padding:34px 24px;text-align:center}.footer strong{font-family:'Patrick Hand';font-size:32px}.muted{color:var(--muted)}
+@media(max-width:850px){.hero-grid,.assess-grid,.feedback-grid{grid-template-columns:1fr}.side{position:static}.info-grid,.bands{grid-template-columns:1fr 1fr}.rubric{grid-template-columns:1fr 1fr}.links{display:none}.hero h1{font-size:54px}}
+@media(max-width:520px){.info-grid,.bands,.rubric{grid-template-columns:1fr}.hero h1{font-size:46px}.qcard{padding:18px}}
+
+
+.download-card{background:linear-gradient(135deg,var(--sky),#fff8d9);border:1px solid var(--line);border-radius:22px;padding:18px 20px;margin-top:18px}
+.download-card h3{margin:0 0 6px;color:var(--navy)}
+.session-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:14px}
+.session-chip{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px;text-align:center;font-weight:900;font-size:12px}
+.session-chip b{display:block;font-size:20px;color:var(--blue)}
+.result-table{width:100%;border-collapse:collapse;margin-top:14px;background:#fff;border-radius:16px;overflow:hidden}
+.result-table th,.result-table td{padding:10px;border:1px solid var(--line);text-align:left;font-size:13px}
+.result-table th{background:var(--sky);font-weight:900}
+.print-note{font-size:12px;color:var(--muted);margin-top:7px}
+.btn.download{background:var(--teal);color:#fff}
+.btn.print{background:var(--blue);color:#fff}
+@media(max-width:850px){.session-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.session-grid{grid-template-columns:1fr}}
+
+
+
+.review-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.rule-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:0 7px 20px #17324d0b}
+.rule-card h3{margin:0 0 8px;color:var(--navy)}
+.rule-card .bigword{font-family:'Patrick Hand';font-size:42px;color:var(--blue);line-height:1}
+.rule-card .formula{display:inline-block;background:var(--yellow);padding:7px 11px;border-radius:12px;font-weight:900;margin:8px 0}
+.example-box{background:var(--sky);border-radius:16px;padding:13px 15px;margin-top:10px}
+.contrast{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.contrast .mini{border-radius:16px;padding:14px;background:#fff;border:1px solid var(--line)}
+.contrast .mini.good{background:var(--mint)}
+.contrast .mini.warn{background:#fff5e8}
+.quick-table{width:100%;border-collapse:collapse;margin-top:16px;background:#fff;border-radius:18px;overflow:hidden}
+.quick-table th,.quick-table td{padding:11px 12px;border:1px solid var(--line);font-size:13px;text-align:left}
+.quick-table th{background:var(--navy);color:#fff}
+.quick-table td:first-child{font-weight:900}
+.challenge{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;margin:14px 0}
+.challenge .prompt{font-size:18px;font-weight:900;color:var(--navy);margin-bottom:10px}
+.choice-row{display:flex;gap:10px;flex-wrap:wrap}
+.review-choice{border:1px solid var(--line);background:#fff;border-radius:16px;padding:10px 14px;font-weight:900;cursor:pointer}
+.review-choice:hover{transform:translateY(-1px)}
+.review-choice.correct{background:#dff4e8;border-color:#8ec9a8}
+.review-choice.wrong{background:#fde7e3;border-color:#e4a49a}
+.review-feedback{margin-top:10px;font-size:13px;font-weight:800}
+.review-summary{background:linear-gradient(135deg,var(--mint),var(--sky));border-radius:22px;padding:22px;margin-top:18px}
+.cheat{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.cheat div{background:#fff;border-radius:14px;padding:12px;border:1px solid var(--line);font-size:13px}
+@media(max-width:850px){.review-grid,.contrast,.cheat{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <div class="brand"><span>English with Mr. Rengifo</span> · Review</div>
+  <div class="links"><a href="#intro">Inicio</a><a href="#review">Review</a><a href="#practice">Practice</a><a href="#summary">Tabla final</a></div>
+</div></nav>
+
+<div class="progress-shell"><div class="progress-inner"><div class="track"><div class="fill" id="globalFill"></div></div></div></div>
+
+<header class="hero" id="intro">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Jimmy · Session 4 Review</div>
+      <h1>Possessive<br/><em>adjectives & pronouns</em></h1>
+      <p>Un repaso claro para distinguir formas como <b>her / hers</b>, <b>my / mine</b>, <b>our / ours</b> y usarlas correctamente en frases cotidianas y de Mining English.</p>
+      <div class="chips">
+        <span class="chip">my / mine</span>
+        <span class="chip">your / yours</span>
+        <span class="chip">his</span>
+        <span class="chip">her / hers</span>
+        <span class="chip">our / ours</span>
+        <span class="chip">their / theirs</span>
+      </div>
+    </div>
+    <div class="note">One key idea:<br/><b>Adjective + noun</b><br/>Pronoun = no noun</div>
+  </div>
+</header>
+
+<section id="review">
+<div class="wrap">
+  <h2 class="section-title">1 · Understand the difference</h2><div class="underline"></div>
+  <p class="lead">Both forms show possession. The difference is what comes after them.</p>
+
+  <div class="review-grid">
+    <div class="rule-card">
+      <div class="bigword">her</div>
+      <h3>Possessive adjective</h3>
+      <div class="formula">her + noun</div>
+      <p>Use <b>her</b> before the thing she owns.</p>
+      <div class="example-box">
+        Her helmet<br/>
+        Her gloves<br/>
+        Her radio
+      </div>
+    </div>
+
+    <div class="rule-card">
+      <div class="bigword">hers</div>
+      <h3>Possessive pronoun</h3>
+      <div class="formula">hers = no noun after it</div>
+      <p>Use <b>hers</b> when the noun is already understood.</p>
+      <div class="example-box">
+        The helmet is hers.<br/>
+        The gloves are hers.<br/>
+        That radio is hers.
+      </div>
+    </div>
+  </div>
+
+  <div class="contrast">
+    <div class="mini good"><b>Correct</b><br/>This is <b>her helmet</b>.<br/>This helmet is <b>hers</b>.</div>
+    <div class="mini warn"><b>Incorrect</b><br/>This is <b>hers helmet</b>. ✗<br/>This helmet is <b>her</b>. ✗</div>
+  </div>
+</div>
+</section>
+
+<section style="background:#fff">
+<div class="wrap">
+  <h2 class="section-title">2 · Apply the same rule</h2><div class="underline"></div>
+
+  <table class="quick-table">
+    <tr><th>Person</th><th>Possessive adjective</th><th>Possessive pronoun</th><th>Example</th></tr>
+    <tr><td>I</td><td>my</td><td>mine</td><td>My helmet. / The helmet is mine.</td></tr>
+    <tr><td>you</td><td>your</td><td>yours</td><td>Your radio. / The radio is yours.</td></tr>
+    <tr><td>he</td><td>his</td><td>his</td><td>His gloves. / The gloves are his.</td></tr>
+    <tr><td>she</td><td>her</td><td>hers</td><td>Her vest. / The vest is hers.</td></tr>
+    <tr><td>we</td><td>our</td><td>ours</td><td>Our locker. / The locker is ours.</td></tr>
+    <tr><td>they</td><td>their</td><td>theirs</td><td>Their tools. / The tools are theirs.</td></tr>
+  </table>
+
+  <div class="review-summary">
+    <b>Fast rule</b>
+    <p>If there is a noun immediately after the possessive form, use the <b>possessive adjective</b>. If the noun disappears because we already know what thing we are talking about, use the <b>possessive pronoun</b>.</p>
+  </div>
+</div>
+</section>
+
+<section id="practice">
+<div class="wrap">
+  <h2 class="section-title">3 · Quick Practice</h2><div class="underline"></div>
+  <p class="lead">Choose the correct option. Each answer locks after one attempt and shows feedback.</p>
+  <div id="questions"></div>
+  <div class="actions">
+    <button class="btn ghost" onclick="resetReview()">Reset review</button>
+  </div>
+</div>
+</section>
+
+<section style="background:#fff">
+<div class="wrap">
+  <h2 class="section-title">4 · Mining English Review</h2><div class="underline"></div>
+
+  <div class="review-grid">
+    <div class="rule-card">
+      <h3>With the noun</h3>
+      <div class="example-box">
+        This is <b>my helmet</b>.<br/>
+        That is <b>her radio</b>.<br/>
+        These are <b>his gloves</b>.<br/>
+        This is <b>our locker</b>.
+      </div>
+    </div>
+    <div class="rule-card">
+      <h3>Without the noun</h3>
+      <div class="example-box">
+        This helmet is <b>mine</b>.<br/>
+        That radio is <b>hers</b>.<br/>
+        These gloves are <b>his</b>.<br/>
+        The locker is <b>ours</b>.
+      </div>
+    </div>
+  </div>
+
+  <div class="review-summary">
+    <b>Useful question</b>
+    <p><b>Whose helmet is this?</b> → It’s mine.<br/>
+    <b>Whose gloves are these?</b> → They’re his.<br/>
+    <b>Is this radio yours?</b> → Yes, it is.</p>
+  </div>
+</div>
+</section>
+
+<section id="summary">
+<div class="wrap">
+  <h2 class="section-title">5 · Final comparison & recap</h2><div class="underline"></div>
+
+  <table class="quick-table">
+    <tr><th>Possessive adjective</th><th>Possessive pronoun</th><th>Main difference</th></tr>
+    <tr><td>my</td><td>mine</td><td>my + noun / mine alone</td></tr>
+    <tr><td>your</td><td>yours</td><td>your + noun / yours alone</td></tr>
+    <tr><td>his</td><td>his</td><td>same form in both functions</td></tr>
+    <tr><td>her</td><td>hers</td><td>her + noun / hers alone</td></tr>
+    <tr><td>our</td><td>ours</td><td>our + noun / ours alone</td></tr>
+    <tr><td>their</td><td>theirs</td><td>their + noun / theirs alone</td></tr>
+  </table>
+
+  <div class="cheat">
+    <div><b>Step 1</b><br/>Look after the possessive word.</div>
+    <div><b>Step 2</b><br/>If a noun comes next, use my / your / his / her / our / their.</div>
+    <div><b>Step 3</b><br/>If there is no noun, use mine / yours / his / hers / ours / theirs.</div>
+  </div>
+
+  <div class="review-summary">
+    <b>Remember this pair</b>
+    <p><b>Her helmet</b> = possessive adjective.<br/>
+    <b>The helmet is hers</b> = possessive pronoun.</p>
+  </div>
+</div>
+</section>
+
+<footer class="footer"><strong>English with Mr. Rengifo</strong><div>Review. Compare. Use it.</div></footer>
+
+<script>
+const questions = [{"q": "This is ___ helmet. (I)", "o": ["my", "mine"], "a": 0, "f": "Use my before a noun: my helmet."}, {"q": "This helmet is ___. (I)", "o": ["my", "mine"], "a": 1, "f": "Use mine when there is no noun after it."}, {"q": "That is ___ radio. (she)", "o": ["her", "hers"], "a": 0, "f": "Use her before a noun: her radio."}, {"q": "That radio is ___. (she)", "o": ["her", "hers"], "a": 1, "f": "Use hers without a noun: The radio is hers."}, {"q": "These are ___ gloves. (he)", "o": ["his", "him"], "a": 0, "f": "His can go before a noun: his gloves."}, {"q": "These gloves are ___. (he)", "o": ["his", "him"], "a": 0, "f": "His can also stand alone: The gloves are his."}, {"q": "This is ___ locker. (we)", "o": ["our", "ours"], "a": 0, "f": "Use our before a noun: our locker."}, {"q": "The locker is ___. (we)", "o": ["our", "ours"], "a": 1, "f": "Use ours without a noun."}];
+let done = 0;
+
+function renderQuestions(){
+  const host=document.getElementById('questions');
+  host.innerHTML='';
+  done=0;
+  document.getElementById('globalFill').style.width='0%';
+
+  questions.forEach((q,i)=>{
+    const card=document.createElement('div');
+    card.className='challenge';
+    card.innerHTML=`
+      <div class="eyebrow">Question ${i+1}</div>
+      <div class="prompt">${q.q}</div>
+      <div class="choice-row">
+        ${q.o.map((o,j)=>`<button class="review-choice" data-j="${j}">${o}</button>`).join('')}
+      </div>
+      <div class="review-feedback"></div>
+    `;
+    const buttons=[...card.querySelectorAll('.review-choice')];
+    const fb=card.querySelector('.review-feedback');
+    let locked=false;
+
+    buttons.forEach(btn=>btn.addEventListener('click',()=>{
+      if(locked)return;
+      locked=true;
+      done++;
+      const chosen=Number(btn.dataset.j);
+      buttons.forEach((b,j)=>{
+        b.disabled=true;
+        if(j===q.a)b.classList.add('correct');
+        else if(j===chosen)b.classList.add('wrong');
+      });
+      fb.textContent=(chosen===q.a?'Correct. ':'Review. ')+q.f;
+      document.getElementById('globalFill').style.width=(done/questions.length*100)+'%';
+    }));
+
+    host.appendChild(card);
+  });
+}
+
+function resetReview(){renderQuestions();document.getElementById('practice').scrollIntoView({behavior:'smooth'})}
+renderQuestions();
+</script>
+</body>
+</html>
